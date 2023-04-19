@@ -1,0 +1,283 @@
+/*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: gilroy-extrabold;
+  src: url(../Public/Icon_Font/Gilroy_Font/gilroy-Bold.woff);
+
+}
+@font-face {
+  font-family: gilroy-Bold;
+  src: url(../Public/Icon_Font/Gilroy_Font/gilroy-Bold.woff);
+  
+}
+@font-face {
+  font-family: gilroy-Semibold;
+  src: url(../Public/Icon_Font/Gilroy_Font/Gilroy-SemiBold.woff);
+  
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../Public/Icon_Font/Gilroy_Font/Lato-Regular.ttf);
+  
+}
+
+html{
+    font-family: Lato-Regular;
+}
+
+.g-4{
+  padding: 0 4rem;
+}
+
+.mgr_2{
+  margin-right:2rem;
+}
+
+#header{
+    background-color: #EDEAE7;
+    padding: 1.2rem 4.2rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: #6c757d;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: inherit;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    
+    
+}
+
+.col-2{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    outline-offset: -2px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #fff;
+}
+.btn-primary:hover {
+  color: #fff;
+  cursor: pointer;
+  border:none;
+}
+.btn-primary .btn-primary:focus {
+  color: orange;
+  background-color: #fff;
+  border-color: none;
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.ti-search{
+    color:#000;
+    display: block;
+}
+.form-control {
+  display: block;
+  width: 12.4rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border:none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input.form-control.round:focus-visible{
+    border:none;
+}
+
+.nav{
+  font-size:1.2rem;
+  margin-left: .2rem;
+}
+
+#header .col-2 .logo{
+    border-left:1px solid rgb(107, 107, 107);
+    padding:0rem 1rem;
+}
+
+#header .col-2 .logo a{
+    text-decoration: none;
+    color:#000
+}
+
+#header .col-2 .logo a .line1{
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    font-family: gilroy-ExtraBold;
+    color:#383634;
+}
+
+#header .col-2 .logo a .line2{
+    font-size: 0.6rem;
+    letter-spacing: 0.12rem;
+    font-family: gilroy-ExtraBold;
+    color:#383634;
+}
+
+.btn{
+  position: relative;
+  z-index: 2;
+}
+
+.nav a{
+  display: flex;
+  gap:0.8rem;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color:#000;
+  margin-left:1.2rem;
+}
+
+.nav a .text{
+  align-items: center;
+  letter-spacing: 0.16rem;
+  
+}
+
+.bonus{
+  display: flex;
+  gap:0.396rem;
+  font-size:1.2rem;
+  margin-right: 1.08rem;
+  letter-spacing: 0.14rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.bonus .text{
+  font-size: 1.02rem;
+}
+
+.user .User .text{
+  font-size: 1.02rem;
+}
+
+.bonus:hover{
+  cursor:default;
+}
+
+.user .User{
+  text-decoration: none;
+  display: flex;
+  gap: 0.36rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.user .User .icon .ti-angle-down{
+  font-size: 0.44rem;
+  padding-left:0.216rem;
+  position:absolute;
+  bottom: 9px;
+}
+
+.user .User .icon .ti-user{
+  font-size: 1.2rem;
+  padding-right: .36rem;
+}
+
+.user .User .icon .text{
+  align-items: center;
+  letter-spacing:0.14rem;
+}
+
+.user .User .icon .ti-angle-down{
+  padding-right:0.2rem;
+  align-items: center;
+}
+
+.Cart .btn{
+  display: flex;
+}
+
+.Cart{
+  background-color: #fff;
+  border-radius: 0.64rem;
+  margin-left:1.2rem;
+}
+
+.btn-cart{
+  font-size:1.08rem;
+  padding:0.64rem 0.6rem;
+  letter-spacing: 0.14rem;
+  align-items: center;
+}
+
+.btn-cart .text{
+  font-size:0.8rem;
+}
+
+.btn-cart-check:hover{
+  cursor: pointer;
+  
+}
+.btn-cart-check:focus {
+  color: orange;
+  background-color: #fff;
+  border-color: none;
+  border-radius: 0.64rem;
+}
+
+.user .User:hover{
+  color:orange;
+  cursor: pointer;
+}
+
+.user .User{
+  border:none;
+}*/
+
+
+
+
+

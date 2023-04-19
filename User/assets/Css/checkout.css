@@ -1,0 +1,289 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+section{
+    background: #edeae7;
+}
+
+section{
+    padding: 7rem;
+}
+
+section .container form{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+section .container form .checkout-box{
+    padding-right: 6rem;
+}
+
+section .container form .checkout-box .address{
+    font-size: 1rem;
+    color: gray;
+}
+
+section .container form .checkout-box .checkout-title{
+    font-size: 2.4rem;
+    color: #383634;
+    margin: 2rem 0;
+}
+
+/*personal information*/
+
+section .container form .checkout-box .personal-information{
+    width: 100%;
+}
+
+section .container form .checkout-box .personal-information .personal-information-title{
+    color: #383634;
+    font-size: 1.4rem;
+}
+
+section .container form .checkout-box .personal-information .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+section .container form .checkout-box .personal-information .input-box{
+    width: calc(50% - 20px);
+    margin-bottom: 15px;
+}
+
+section .container form .checkout-box .personal-information .input-box label{
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    display: block;
+    color: #a4a4a4;
+}
+
+section .container form .checkout-box .personal-information .input-box input{
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.6rem;
+    border: 0.1rem solid #edeae7;
+    outline: none;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/*delivery details*/
+
+section .container form .checkout-box .delivery-details{
+    width: 100%;
+}
+
+section .container form .checkout-box .delivery-details .delivery-details-title{
+    color: #383634;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+section .container form .checkout-box .delivery-details .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+section .container form .checkout-box .delivery-details .input-box{
+    width: calc(50% - 20px);
+    margin-bottom: 15px;
+}
+
+section .container form .checkout-box .delivery-details .input-box label{
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    display: block;
+    color: #a4a4a4;
+}
+
+section .container form .checkout-box .delivery-details .input-box input{
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.6rem;
+    border: 0.1rem solid #edeae7;
+    outline: none;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/*payment*/
+
+section .container form .checkout-box .payment .payment-title{
+    font-size: 1.4rem;
+    color: #383634;
+    margin-top: 3rem;
+}
+
+section .container form .checkout-box .payment .payment-details .category{
+    width: 100%;
+    height: 8.5rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .container form .checkout-box .payment .payment-details .category label{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.8rem;
+    border-bottom: #ddd solid 0.1rem;
+}
+
+section .container form .checkout-box .payment .payment-details .category label .dot{
+    height: 1.2rem;
+    width: 1.2rem;
+    background: #d9d9d9;
+    border-radius: 30%;
+    margin-right: 0.5rem;
+
+    border: 0.2rem solid transparent;
+}
+
+section .container form .checkout-box .payment .payment-details .category label .dot:hover{
+    background: #ccc;
+}
+
+section .container form .checkout-box .payment .payment-details input{
+    font-size: 45px;
+    /* margin-right: 10px; */
+    margin: 11px;
+    width: 37px;
+    height: 16px;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #4c7c7d;
+}
+
+section .container form .your-order{
+    margin-top: 8rem;
+}
+
+section .container form .your-order .your-order-title{
+    color: #383634;
+    font-size: 1.4rem
+}
+
+section .container form .your-order .subtotal{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #a4a4a4;
+}
+
+section .container form .your-order .delivery{
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    color: #a4a4a4;
+    padding-bottom: 1rem;
+    border-bottom: #ddd solid 0.1rem;
+}
+
+section .container form .your-order .total{
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    color: #383634;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+section .container form .your-order button{
+    margin-top: 1.6rem;
+    width: 100%;
+    height: 3.6rem;
+    background: #4c7c7d;
+    color: #edeae7;
+    border: #4c7c7d solid 0.1rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+}
+
+section .container form .your-order button:hover{
+    background: #383634;
+}
+
+/*list*/
+
+section .container form .your-order .list{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+section .container form .your-order .list .list-box{
+    width: 100%;
+    display: flex;
+    border-bottom: 0.1rem solid #ddd;
+}
+
+section .container form .your-order .list .list-box .pp .product{
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container form .your-order .list .list-box img{
+    width: 7rem;
+}
+
+section .container form .your-order .list .list-box .pp{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+}
+
+section .container form .your-order .list .list-box .pp .product .product-title{
+    color: #383634;
+    font-size: 1rem;
+}
+
+section .container form .your-order .list .list-box .pp .list-bill{
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container form .your-order .list .list-box .pp .list-bill .quantity{
+    border: 0.1rem solid #ddd;
+    width: 8rem;
+    height: 3.4rem;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .container form .your-order .list .list-box .pp .list-bill .quantity span{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+section .container form .your-order .list .list-box .pp .list-bill .quantity span.num{
+    font-size: 1rem;
+    font-weight: 400;
+    border-right: 0.1rem solid #ddd;
+    border-left: 0.1rem solid #ddd;
+    width: 14rem;
+}
+

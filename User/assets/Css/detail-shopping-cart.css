@@ -1,0 +1,122 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+body {
+	font-family: Arial;
+	color: #211a1a;
+	font-size: 0.9em;
+}
+
+.container{
+    width: 80rem;
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edeae7;
+    margin-left: 8rem;
+
+}
+
+.shopping-cart-detail{
+    margin: 74px 12rem;
+}
+
+.container .shopping-cart-detail .shopping-cart-detail-title{
+        color: #211a1a;
+        border-bottom: 1px solid #E0E0E0;
+        overflow: auto;
+        padding-bottom: 20px;
+        font-size: 30px;
+}
+
+.container .shopping-cart-detail .cart-area{
+    padding-top: 2rem;
+    padding-bottom: 1.4rem;
+}
+
+.container .shopping-cart-detail .box-container{
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container .shopping-cart-detail .box-container table thead tr{
+    height: 6rem;
+}
+
+.container .shopping-cart-detail .box-container table thead tr th{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #383634;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 0.1rem solid #ddd;
+}
+
+.container .shopping-cart-detail .box-container table thead tr td{
+    padding: 1rem 0;
+    vertical-align: middle;
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    width: 12rem;
+    border-bottom: 0.1rem solid #ddd;
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td .product{
+    display: flex;
+    align-items: center;
+    width: 32rem;
+    height: 11rem;
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td .product img{
+    width: 10rem;
+    padding-right: 1rem;
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td .product .product-name{
+    font-size: 1.3rem;
+    color: #383634;
+    margin-left: 2rem;
+
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td .quantity{
+    border: 0.1rem solid #ddd;
+    width: 8rem;
+    height: 3.4rem;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td .quantity span{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container .shopping-cart-detail .box-container table tbody tr td .quantity span.num{
+    font-size: 1rem;
+    font-weight: 400;
+    border-right: 0.1rem solid #ddd;
+    border-left: 0.1rem solid #ddd;
+    width: 14rem;
+}
+
+.container .shopping-cart-detail button{
+    width: 20rem;
+    margin-left: 35%;
+    height: 4rem;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, #4c7c7d, #e45959);
+    color: #ddd;
+    border-radius: 0.5rem;
+    border: none;
+}

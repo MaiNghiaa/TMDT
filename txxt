@@ -1,0 +1,132 @@
+'Nghiaduke', '@Nghiaduke12321
+
+usertk+mk:  huong 0306 
+* phpmyadmin
++ Hóa đơn - hóa đơn chi tiết - phương thức vận chuyển + phương thức thanh toán -> checkout
+
++ phản hồi - liên hệ == > riêng
+
++ khach_hang => login + logout....
+
+
+done phần front+back_end :
+- login
+- logout
+- register
+
+
+Phần Front-end:
+- Homepage
+- Listing
+- Checkout
+- Product
+
+phần back-end
+
+nhiệm vụ còn lại phân lại các phần header + footer ( phần nào dùng nhiều thì đặt file riêng);
+
+
+
+nhiệm vụ admin 
+
+Back-end
+
+CRUD 
+
+- tạo 1 form đăng kí bán sản phẩm mới ==>> đặt button hướng tới trang đó ==> để button đó trong phần hiển thị sản phẩm
+- 1 phần để hiển thị sản phẩm trong trang index( trong đó có thêm 2 nút Sửa + xóa)
+- 
+
+(
+    session_start();
+?>
+<?php
+if ($_POST['submit']) {
+    $Product = $_POST['Product'];
+    $Description = $_POST['Description'];
+    $Price = $_POST['Price'];
+    $Img = $_POST['Img'];
+    $Status = $_POST['Status'];
+}
+?>
+<?php
+
+if(isset($_POST['Product']))
+if($_FILES['image']['error'] == 0){
+
+    $file = $_FILES['image'];
+    $file_name = $file['Product'];
+    move_uploaded_file($_FILES['images']['tmp_name'], 'assets/Upload_images'.$file['Product']);
+    // lưu trong database
+
+    $sql= "INSERT INTO 'sản phẩm' ('Product', 'description', 'price', 'Image', 'Status', 'id_product_type') VALUES ($Product,$Description,$Price,$file_name,$Status)";
+}
+
+
+)
+
+
+//<div class="wrapper">
+<!--sidebar wrapper -->
+<div class="sidebar-wrapper" data-simplebar="true">
+    <?php include_once 'sidebar.php' ?>
+    <!--end navigation-->
+</div>
+<!--end sidebar wrapper -->
+<!--start header -->
+<header>
+    <?php include_once 'header.php'; ?>
+</header>
+
+
+
+<li id="js_user" class="user dropdown">
+<div class="User dropdown">
+
+</div>
+<ul id="js_subnav" class="subnav">
+    <li><a href="profile_user.php?sid=">Profile</a></li>
+    <li><a href="logout.php?sid=">Logout</a></li>
+</ul>
+</li>
+
+// phần hiển thị li của header
+<ul class="shopping-cart">
+                <div class="item_cart">
+            <h2>My shopping cart : </h2>
+                <?php if (isset($_SESSION['box']) && !empty($_SESSION['box'])) {
+                    foreach($cart as $value) {
+                ?>
+                        <li>
+                            <div class="item_col">
+                                <!-- img -->
+                                <img src="../admin/upload/<?php echo $value['Image'] ?>" alt="">
+                            </div>
+                            <div class="item_col">
+                                <!-- content -->
+                                <div class="item_row">
+                                    <!-- product -->
+                                    <h5><?php echo $value['Product'] ?></h5>
+                                </div>
+                                <div class="item_row_2">
+                                    <!-- Information -->
+                                    <div class="item_col_2 quantity">
+                                        <!-- quantity -->
+                                        <!-- <form>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                </form> -->
+                                    </div>
+                                    <div class="item_col_2">
+                                        <!-- price -->
+                                        <p><?php echo '$' . $value['price'] ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                <?php }
+                }?></div>
+                <div class="btn_view_cart"><a href="index.php?page=order_detail" class="btn2">View Cart</a></div>
+                
+            </ul>
